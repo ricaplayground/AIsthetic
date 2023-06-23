@@ -1,0 +1,55 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+void main() {
+  runApp(AIstheticApp());
+}
+
+class AIstheticApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.deepPurple[100],
+        body: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Welcome to AIsthetic',
+                  style: GoogleFonts.bigShouldersInlineText(
+                    textStyle: Theme.of(context).textTheme.headline4,
+                    fontSize: 48,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.deepPurple,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  'Your AI beauty advisor! Discover personalized haircare, skincare, and makeup. #BeautyTailoredByAI',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.deepPurple[700],
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 40),
+                RaisedButton(
+                  onPressed: () {},
+                  color: Colors.deepPurple,
+                  textColor: Colors.white,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                    child: Text('Get Started'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
